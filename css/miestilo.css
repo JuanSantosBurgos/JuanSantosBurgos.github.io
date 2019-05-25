@@ -1,40 +1,92 @@
-h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-image: url(/JuanSantosBurgos.github.io/img/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-table {
-    background-color: grey;
-    border-color: black;
-    border-style: solid;
-}
-
-button {
-    background-color: white;
-    /* Green */
-    border: solid;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-h2 {
-    color: white;
-}
-
-div {
-    color: white;
-}
-
-h3 {
-    color: white;
-}
+    h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-image: url(/JuanSantosBurgos.github.io/img/fondo.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    table {
+        background-color: grey;
+        border-color: black;
+        border-style: solid;
+    }
+    
+    button {
+        background-color: white;
+        border: solid;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border: 2px solid rgb(110, 89, 89);
+    }
+    
+    button:hover {
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        background-color: grey;
+        box-shadow: 0 12px 16px 0 grey;
+    }
+    
+    .dissabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+    
+    h2 {
+        color: white;
+    }
+    
+    div {
+        color: white;
+    }
+    
+    h3 {
+        color: white;
+    }
+    
+    footer {
+        background-color: grey;
+        margin-bottom: 0%;
+    }
+    
+    #sis {
+        border-style: solid;
+        border-color: goldenrod;
+    }
+    
+    #div1 {
+        border-color: grey;
+    }
+    
+    #sis2:hover {
+        border-style: solid;
+        border-color: goldenrod;
+        transform: rotate(360deg);
+    }
+    
+    #sis3 {
+        border-style: solid;
+        border-color: goldenrod;
+    }
+    
+    #sis3:hover {
+        filter: opacity(.5);
+    }
+    
+    .img:hover {
+        filter: opacity(.5);
+    }
+    
+    .img {
+        border: solid;
+        border-color: gold;
+        width: 500px;
+        height: 300px;
+    }
