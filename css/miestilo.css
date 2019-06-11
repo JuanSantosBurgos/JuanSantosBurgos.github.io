@@ -3,10 +3,103 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     
-    body {
-        background-image: url(/JuanSantosBurgos.github.io/img/fondo.jpg);
-        background-size: cover;
-        background-attachment: fixed;
+    * {
+        padding-left: 0px;
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 998;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.2s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
+    
+    .sec-striped {
+        float: left;
+        overflow: hidden;
+        position: absolute;
+        border-left: solid 2px #242424;
+        border-right: solid 2px #242424;
+        border-bottom: solid 0px #242424;
+        box-sizing: border-box;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    
+    .sec-striped:hover .texto-striped {
+        position: absolute;
+        bottom: 20%;
+    }
+    
+    .sec-striped img {
+        transition: all .55s ease-in-out;
+        -moz-transition: all .55s ease-in-out;
+        -webkit-transition: all .55s ease-in-out;
+        -o-transition: all .55s ease-in-out;
+    }
+    
+    .texto-striped {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        transition: all .55s ease-in-out;
+        -moz-transition: all .55s ease-in-out;
+        -webkit-transition: all .55s ease-in-out;
+        -o-transition: all .55s ease-in-out;
+        text-align: center;
+    }
+    
+    .sec-striped:hover img {
+        opacity: 0.50;
+        transform: scale(1.8, 1.8) rotate(2deg);
+        -o-transform: scale(1.8, 1.8) rotate(3deg);
+        -webkit-transform: scale(1.8, 1.8) rotate(3deg);
+        -moz-transform: scale(1.8, 1.8) rotate(3deg);
+        filter: blur(5px);
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: url(#blur);
+        filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='2');
+    }
+    
+    .sec-striped {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    .icon:hover {
+        padding-right: 3rem;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    }
+    
+    .sec-striped img {
+        width: 140%;
+        ;
     }
     
     table {
@@ -25,6 +118,10 @@
         display: inline-block;
         font-size: 16px;
         border: 2px solid rgb(110, 89, 89);
+    }
+    
+    body {
+        background-color: black;
     }
     
     button:hover {
@@ -90,3 +187,9 @@
         width: 500px;
         height: 300px;
     }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    /*nav*/
