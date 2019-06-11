@@ -46,7 +46,7 @@
     }
     
     .sec-striped:hover .texto-striped {
-        position: absolute;
+        position: relative;
         bottom: 20%;
     }
     
@@ -71,11 +71,11 @@
     }
     
     .sec-striped:hover img {
-        opacity: 0.50;
-        transform: scale(1.8, 1.8) rotate(2deg);
-        -o-transform: scale(1.8, 1.8) rotate(3deg);
-        -webkit-transform: scale(1.8, 1.8) rotate(3deg);
-        -moz-transform: scale(1.8, 1.8) rotate(3deg);
+        opacity: 0.30;
+        transform: scale(1.8, 1.8) rotate(10deg);
+        -o-transform: scale(1.8, 1.8) rotate(10deg);
+        -webkit-transform: scale(1.8, 1.8) rotate(10deg);
+        -moz-transform: scale(1.8, 1.8) rotate(10deg);
         filter: blur(5px);
         -webkit-filter: blur(2px);
         -moz-filter: blur(2px);
@@ -98,7 +98,7 @@
     }
     
     .sec-striped img {
-        width: 140%;
+        width: 150%;
         ;
     }
     
