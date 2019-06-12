@@ -9,13 +9,79 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/batman.png">
-    <link rel="stylesheet" href="css/miestilo.css">
+    <!-- Font Awesome -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+
+
+    <style>
+        .gris {
+            background: rgba(0, 0, 0, 0.205);
+        }
+        
+        .top-nav-collapse {
+            background: rgba(0, 0, 0, 0.795) !important;
+        }
+        
+        .cuerpo {
+            padding-top: 6%;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div align="center">
+        <nav class="navbar navbar-expand-lg navbar-dark gris scrolling-navbar fixed-top">
+            <a class=" navbar-brand " href="# ">Navbar</a>
+            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="# ">Home <span class="sr-only ">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Link</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link disabled " href="# " tabindex="-1 " aria-disabled="true ">Disabled</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/tillchz/" class="nav-link">
+
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+
+                            <i class="fa fa-twitter"></i>
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- <header>
+        <div align="center ">
             <nav>
                 <button><a href=index.html>Inicio</a></button>
                 <button><a href=info.html>Información Personal</a></button>
@@ -23,17 +89,18 @@
                 <button><a href=sitios.html>Sitios Turisticos</a></button>
             </nav>
         </div>
-    </header>
-    <h1 align="center">Mi Información</h1>
-    <!-- <div align="center">
-        <audio controls align="center">
-                <source src="mus/Na na na na na na na na na na na na na na na na... BATMAN!.mp3" type="audio/mp3">
+    </header> -->
+
+    <!-- <div align="center ">
+        <audio controls align="center ">
+                <source src="mus/Na na na na na na na na na na na na na na na na... BATMAN!.mp3 " type="audio/mp3 ">
     
                 </div>-->
-    <h2 align="center">Presentación</h2>
-    <p align="center">En la presente página presento datos personales y muestro algunos de mis intereces. </p>
-    <div>
+
+    <div class="cuerpo">
         <div>
+            <h2 align="center ">Presentación</h2>
+            <p align="center ">En la presente página presento datos personales y muestro algunos de mis intereces. </p>
             <h3>Datos Generales</h3>
             <ul>
                 <li>Nombre completo: Juan José Santos Burgos</li>
@@ -50,72 +117,72 @@
 
             </ul>
         </div>
-        <div align="center">
+        <div align="center ">
             <h3>Intereces</h3>
             <h4>* Música</h4>
 
             <table>
                 <tr>
-                    <td align="center"><strong>Nombre</strong></td>
-                    <td align="center"><strong>--Audio--</strong></td>
-                    <td align="center"><strong>Portada</strong></td>
+                    <td align="center "><strong>Nombre</strong></td>
+                    <td align="center "><strong>--Audio--</strong></td>
+                    <td align="center "><strong>Portada</strong></td>
                 </tr>
                 <tr>
                     <td>Rammstein - Liebe ist fur alle da</td>
                     <td>
-                        <audio controls> <source src="mus/Liebe Ist Fur Alle Da.mp3" type="audio/mp3"></audio>
+                        <audio controls> <source src="mus/Liebe Ist Fur Alle Da.mp3 " type="audio/mp3 "></audio>
                     </td>
-                    <td><img src="img/ramstein.jpg" width="70" alt=""></td>
+                    <td><img src="img/ramstein.jpg " width="70 " alt=" "></td>
                 </tr>
 
                 <tr>
                     <td>Celia Cruz - Te busco</td>
                     <td>
-                        <audio controls> <source src="mus/Te Busco - Celia Cruz.mp3" type="audio/mp3"></audio>
+                        <audio controls> <source src="mus/Te Busco - Celia Cruz.mp3 " type="audio/mp3 "></audio>
                     </td>
-                    <td><img title="celia" src="img/celia.jpg" width="70" alt=""></td>
+                    <td><img title="celia " src="img/celia.jpg " width="70 " alt=" "></td>
                 </tr>
                 <tr>
                     <td>Meat Loaf - Alive</td>
                     <td>
-                        <audio controls> <source src="mus/Meat Loaf - Alive.mp3" type="audio/mp3"></audio>
+                        <audio controls> <source src="mus/Meat Loaf - Alive.mp3 " type="audio/mp3 "></audio>
                     </td>
-                    <td><img src="img/alive.jpg" width="70" alt=""></td>
+                    <td><img src="img/alive.jpg " width="70 " alt=" "></td>
                 </tr>
                 <tr>
                     <td>Queensryche - Silent Lucidity</td>
                     <td>
-                        <audio controls> <source src="mus/Queensryche - Silent Lucidity.mp3" type="audio/mp3"></audio>
+                        <audio controls> <source src="mus/Queensryche - Silent Lucidity.mp3 " type="audio/mp3 "></audio>
                     </td>
-                    <td><img src="img/silent.jpg" width="70" alt=""></td>
+                    <td><img src="img/silent.jpg " width="70 " alt=" "></td>
                 </tr>
 
             </table>
 
             <!-- <ul>
                 <li>Rammsetin - Liebe ist fur alle da: <audio controls>
-                        <source  src="mus/Liebe Ist Fur Alle Da.mp3" type="audio/mp3">
+                        <source  src="mus/Liebe Ist Fur Alle Da.mp3 " type="audio/mp3 ">
                  </li>
                  <li>Celia Cruz - Te busco:            <audio controls>
-                        <source  src="mus/Te Busco - Celia Cruz.mp3" type="audio/mp3">
+                        <source  src="mus/Te Busco - Celia Cruz.mp3 " type="audio/mp3 ">
                  </li>
                  <li>Meat Loaf - Alive: <audio controls>
-                        <source  src="mus/Meat Loaf - Alive.mp3" type="audio/mp3">
+                        <source  src="mus/Meat Loaf - Alive.mp3 " type="audio/mp3 ">
                  </li>
                  <li>Queensryche - Silent Lucidity: <audio controls>
-                        <source  src="mus/Queensryche - Silent Lucidity.mp3" type="audio/mp3">
+                        <source  src="mus/Queensryche - Silent Lucidity.mp3 " type="audio/mp3 ">
                  </li>
             </ul>
             -->
         </div>
-        <h4 align="center">
+        <h4 align="center ">
             *Películas
         </h4>
-        <table align="center">
+        <table align="center ">
             <tr>
-                <td align="center"><strong>Nombre</strong></td>
-                <td align="center"><strong>Sinópsis</strong></td>
-                <td align="center"><strong>Portada</strong></td>
+                <td align="center "><strong>Nombre</strong></td>
+                <td align="center "><strong>Sinópsis</strong></td>
+                <td align="center "><strong>Portada</strong></td>
 
             </tr>
             <tr>
@@ -125,8 +192,8 @@
                     </p>
                 </td>
                 <td>
-                    <a href="https://www.youtube.com/watch?v=6FS_25Pbvz4" target="blank">
-                        <img title="CLICK PARA VER EL TRAILER" src="img/green.jpg " width="70 " alt=" "></a>
+                    <a href="https://www.youtube.com/watch?v=6FS_25Pbvz4 " target="blank ">
+                        <img title="CLICK PARA VER EL TRAILER " src="img/green.jpg " width="70 " alt=" "></a>
                 </td>
 
             </tr>
@@ -149,12 +216,19 @@
     </embed>-->
 
         <footer>
-            <p align="center">ⒸJuanSantos |
+            <p align="center ">ⒸJuanSantos |
                 <a href="mailto: jsantosb@unc.edu.pe "> jsantosb@unc.edu.pe</a>
             </p>
 
         </footer>
-
+        <!-- JQuery -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js "></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js "></script>
 
 
 </body>
