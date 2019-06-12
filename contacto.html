@@ -9,27 +9,76 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/batman.png">
-    <link rel="stylesheet" href="css/miestilo.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="custom.css">
+    <style>
+        .gris {
+            background: rgba(0, 0, 0, 0.356);
+        }
+        
+        .top-nav-collapse {
+            background: rgba(0, 0, 0, 0.795) !important;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 380px;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div align="center">
-            <nav>
-                <button><a href=index.html>Inicio</a></button>
-                <button><a href=info.html>Información Personal</a></button>
-                <button><a href=contacto.html>Contacto</a></button>
-                <button><a href=sitios.html>Sitios Turisticos</a></button>
-            </nav>
-        </div>
-    </header>
-    <h1 align="center">Información de Contacto</h1>
+
+    <h1 align="center">Formulario de Contacto</h1>
 
     <div>
+        <nav class="navbar navbar-expand-lg navbar-dark gris black sticky-top scrolling-navbar">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="info.html">Información <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacto.html">Contacto  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sitios.html">Sitios Turísticos</a>
+                    </li>
 
-        <table align="center">
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form action="contact.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><h2>Nombre</h2></label>
+                    <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Rodriguez">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><h2>Correo Electrónico</h2></label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@gmail">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"><h2>Asunto</h2></label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Escribeme algo" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+            </form>
+        </div>
+        <!-- <table align="center">
             <tr>
                 <td><strong></strong></td>
                 <td><strong></strong></td>
@@ -71,8 +120,8 @@
                 </td>
             </tr>
 
-        </table>
-        <h2 align="center">O puedes llenar el siguiente formulario</h2>
+        </table> -->
+        <!-- <h2 align="center">O puedes llenar el siguiente formulario</h2>
 
         <div>
             <form>
@@ -85,23 +134,75 @@
                 <input type="radio" name="importancia" value="otro">Otro<br>
                 <input type="submit" value=Enviar>
             </form>
-        </div>
+        </div> -->
 
 
 
+        <section>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d832.2027474799056!2d-78.49588981033966!3d-7.166796864491292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25b2109e3d81d%3A0xc7616e104853988d!2sAv+Atahualpa+1050%2C+Cajamarca+06003%2C+Per%C3%BA!5e0!3m2!1ses!2sus!4v1560331707443!5m2!1ses!2sus"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+        </section>
 
 
 
+        <footer class="page-footer font-small cyan special-color-dark ">
 
-        <footer>
-            <p align="center">ⒸJuanSantos |
-                <a href="mailto: jsantosb@unc.edu.pe"> jsantosb@unc.edu.pe</a>
-            </p>
+            <!-- Footer Elements -->
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-5">
+                        <div class="mb-5 flex-center">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic" href="https://www.facebook.com/juan.santosburgos" target="blank">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic" href="https://twitter.com/Burgos_6" target="blank">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+
+                            <!--Instagram-->
+                            <a class="ins-ic" href="https://www.instagram.com/tillchz/" target="blank">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+            <!-- Footer Elements -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyrigth:
+                <a href=""> Juan Santos Burgos</a>| <a href="mailto: jsantosb@unc.edu.pe"> jsantosb@unc.edu.pe</a>
+            </div>
+            <!-- Copyright -->
 
         </footer>
 
-
-
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js "></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCe30oLPh7uH3vWngw96bjZ0HLPq51Byf8'></script>
 </body>
 
 

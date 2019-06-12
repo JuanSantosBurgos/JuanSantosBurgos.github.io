@@ -9,13 +9,110 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/batman.png">
-    <link rel="stylesheet" href="css/miestilo.css">
+
     <link rel="stylesheet" href="ifonts/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="custom.css">
+
 
 </head>
 
 <body>
-    <header>
+    <style>
+        .gris {
+            background: rgba(0, 0, 0, 0.356);
+        }
+        
+        .top-nav-collapse {
+            background: rgba(0, 0, 0, 0.795) !important;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 450px;
+        }
+        
+        .carousel-caption {
+            color: rgb(226, 226, 226);
+            background-color: rgba(0, 0, 0, 0.24);
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark gris black sticky-top scrolling-navbar">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="info.html">Información <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sitios.html">Sitios Turísticos</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/colpa.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h3>Hacienda La Colpa</h3>
+                        <p>La hacienda La Colpa es uno de los centros turísticos, promocionados por las diferentes agencias de turismo. Una de las características especiales de este lugar es el llamado de las vacas por su nombre, las cuales al escuchar su
+                            nombre, se ubican en su correspondiente lugar en el establo para el ordeño.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cumbe.jpg" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h3>Los Frailones de Cumbemayo</h3>
+                        <p>Descubierto en 1937, está rodeado por un interesante bosque de piedras que parecen reproducir las siluetas de piadosos frailes (por lo que familiarmente se les denomina "frailones"). Además, destacan el Acueducto (1000 a.C.), singular
+                            obra de ingeniería hidráulica; el denominado Santuario, farallón con apariencia de una gigantesca cabeza humana; y Las Cuevas, donde existen grabados o petroglifos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/baños.jpg" alt="New York">
+                    <div class="carousel-caption">
+                        <h3>Complejo turístico Baños del Inca</h3>
+                        <p>El complejo turístico Baños del Inca se encuentra ubicado en el distrito de Baños del Inca, a una altitud de 2.667 metros sobre el nivel del mar, en el departamento de Cajamarca. Este lugar está conformado por una serie de atractivos
+                            turísticos que combinan a la perfección flora, fauna y restos arqueológicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+        <!-- <header>
         <div align="center">
             <nav>
                 <button><a href=index.html>Inicio</a></button>
@@ -24,97 +121,147 @@
                 <button><a href=sitios.html>Sitios Turisticos</a></button>
             </nav>
         </div>
-    </header>
-    <h1 align="center">Lugares Turísticos Cajamarca</h1>
-    <!-- <div align="center">
+    </header> -->
+
+        <!-- <div align="center">
         <audio controls align="center">
                 <source src="mus/Na na na na na na na na na na na na na na na na... BATMAN!.mp3" type="audio/mp3">
     
                 </div>-->
-    <div>
-        <h2 align="center">Hacienda La Colpa</h2>
+        <!-- <div>
+            <h2 align="center">Hacienda La Colpa</h2>
 
-        <center>
-            <a href="https://www.youtube.com/watch?v=6FS_25Pbvz4" target="blank"><img class="img" title="Click para ver video" src="img/colpa.jpg" alt=""></a>
-        </center>
-        <p>La hacienda La Colpa es uno de los centros turísticos, promocionados por las diferentes agencias de turismo. Una de las características especiales de este lugar es el llamado de las vacas por su nombre, las cuales al escuchar su nombre, se ubican
-            en su correspondiente lugar en el establo para el ordeño.</p>
-        Haga click en la imágen para ver un documental
+            <center>
+                <a href="https://www.youtube.com/watch?v=6FS_25Pbvz4" target="blank"><img class="img" title="Click para ver video" src="img/colpa.jpg" alt=""></a>
+            </center>
+            <p>La hacienda La Colpa es uno de los centros turísticos, promocionados por las diferentes agencias de turismo. Una de las características especiales de este lugar es el llamado de las vacas por su nombre, las cuales al escuchar su nombre, se
+                ubican en su correspondiente lugar en el establo para el ordeño.</p>
+            Haga click en la imágen para ver un documental
 
-        <address>Autor: <abbr title="Radio Programas del Perú">RPP</abbr></address>
-        <h3>Datos Generales</h3>
-        <ul>
-            <li>Ubicación: A 11 kilometros al suroeste de la ciudad de cajamarca (15 minutos en auto)</li>
-            <li>Clima: Templado</li>
-            <li>Horario de visita: 9:00 am a 5:00 pm</li>
-
-
-        </ul>
-    </div>
-
-    <div>
-        <h2 align="center">Complejo turístico Baños del Inca</h2>
-        <center><img class="img" src="img/baños.jpg" alt=""></center>
-        <p>El complejo turístico Baños del Inca se encuentra ubicado en el distrito de Baños del Inca, a una altitud de 2.667 metros sobre el nivel del mar, en el departamento de Cajamarca. Este lugar está conformado por una serie de atractivos turísticos
-            que combinan a la perfección flora, fauna y restos arqueológicos.</p>
-        <address>Autor:Redacción Peru.com</address>
-        <h3>Datos Generales</h3>
-        <ul>
-            <li>Ubicación: A 10 minutos de la ciudad de Cajamarca</li>
-            <li>Clima: Templado</li>
-            <li>Horario de visita: de 5:00 am a 8:00 pm</li>
+            <address>Autor: <abbr title="Radio Programas del Perú">RPP</abbr></address>
+            <h3>Datos Generales</h3>
+            <ul>
+                <li>Ubicación: A 11 kilometros al suroeste de la ciudad de cajamarca (15 minutos en auto)</li>
+                <li>Clima: Templado</li>
+                <li>Horario de visita: 9:00 am a 5:00 pm</li>
 
 
-        </ul>
-    </div>
+            </ul>
+        </div> -->
 
-    <div>
-        <h2 align="center">Cerro de Santa Apolonia</h2>
-        <center> <img class="img" src="img/apolonia.jpg" alt=""></center>
-        <p>
-            Mirador de Santa Apolonia en Cajamarca Perú Este cerro de Santa Apolinia tiene una altura de 2,764 metros sobre el nivel del mar. Se ubica al lado Oeste del valle y de la ciudad de Cajamarca. El cerro de Santa Apolonia antes se le conocía con el nombre
-            Rumi Tiana o "Asiento de Piedra". La cultura Chavin es la que modifica la cima del cerro Santa Apolonia en el año 1,200 antes de Cristo.</p>
-        <address>Autor:Redacción Peru.com</address>
-        <h3>Datos Generales</h3>
-        <ul>
-            <li>Ubicación: A 300 metros de la plaza de armas de la ciudad de Cajamarca</li>
-            <li>Clima: Templado</li>
-            <li>Horario de visita: de 7:00 am a 6:30 pm</li>
+        <!-- <div>
+            <h2 align="center">Complejo turístico Baños del Inca</h2>
+            <center><img class="img" src="img/baños.jpg" alt=""></center>
+            <p>El complejo turístico Baños del Inca se encuentra ubicado en el distrito de Baños del Inca, a una altitud de 2.667 metros sobre el nivel del mar, en el departamento de Cajamarca. Este lugar está conformado por una serie de atractivos turísticos
+                que combinan a la perfección flora, fauna y restos arqueológicos.</p>
+            <address>Autor:Redacción Peru.com</address>
+            <h3>Datos Generales</h3>
+            <ul>
+                <li>Ubicación: A 10 minutos de la ciudad de Cajamarca</li>
+                <li>Clima: Templado</li>
+                <li>Horario de visita: de 5:00 am a 8:00 pm</li>
 
 
-        </ul>
-    </div>
-    <div>
-        <h2 align="center">Los Frailones de Cumbemayo</h2>
-        <center> <img class="img" src="img/cumbe.jpg" alt=""></center>
-        <p>Descubierto en 1937, está rodeado por un interesante bosque de piedras que parecen reproducir las siluetas de piadosos frailes (por lo que familiarmente se les denomina "frailones"). Además, destacan el Acueducto (1000 a.C.), singular obra de
-            ingeniería hidráulica; el denominado Santuario, farallón con apariencia de una gigantesca cabeza humana; y Las Cuevas, donde existen grabados o petroglifos.</p>
-        <h3>Datos Generales</h3>
-        <ul>
-            <li>Ubicación: A 20km al suroeste de la ciudad de Cajamarca</li>
-            <li>Clima: Templado</li>
-            <li>Temperatura promedio: Entre 5° y 18°</li>
-            <li>Acceso Via terrestre: Se puede tomar alguna movilidad que se dirija a Chetilla, o se puede contratar alguna agencia de turismo</li>
+            </ul>
+        </div> -->
 
-        </ul>
+        <!-- <div>
+            <h2 align="center">Cerro de Santa Apolonia</h2>
+            <center> <img class="img" src="img/apolonia.jpg" alt=""></center>
+            <p>
+                Mirador de Santa Apolonia en Cajamarca Perú Este cerro de Santa Apolinia tiene una altura de 2,764 metros sobre el nivel del mar. Se ubica al lado Oeste del valle y de la ciudad de Cajamarca. El cerro de Santa Apolonia antes se le conocía con el nombre
+                Rumi Tiana o "Asiento de Piedra". La cultura Chavin es la que modifica la cima del cerro Santa Apolonia en el año 1,200 antes de Cristo.</p>
+            <address>Autor:Redacción Peru.com</address>
+            <h3>Datos Generales</h3>
+            <ul>
+                <li>Ubicación: A 300 metros de la plaza de armas de la ciudad de Cajamarca</li>
+                <li>Clima: Templado</li>
+                <li>Horario de visita: de 7:00 am a 6:30 pm</li>
 
-    </div>
-    <div>
-        <h2 align="center">Cataratas de Llacanora</h2>
-        <center><img class="img" src="img/llacanora.jpg" alt=""></i>
-        </center>
-        <p>LLACANORA por sus caracteristicas es un tipico pueblo de sierra, su significado es "Tierra de Color". Llacanora cuentas con dos caidas de agua, conocidas como las cataratas de Llacanora, la primera catarata del recorrido tiene el nombre de Catarata
-            Hembra, su caida de agua es de poca altura en comparacion con la de la Catarata Macho.</p>
-        <address>Autor:Redacción Peru.com</address>
-    </div>
 
-    <audio> <source src="mus/carnaval.mp3" type="audio/mp3"></audio>
-    <footer>
-        <p align="center">ⒸJuanSantos |
-            <a href="mailto: jsantosb@unc.edu.pe "> jsantosb@unc.edu.pe</a>
-        </p>
+            </ul>
+        </div>
+        <div>
+            <h2 align="center">Los Frailones de Cumbemayo</h2>
+            <center> <img class="img" src="img/cumbe.jpg" alt=""></center>
+            <p>Descubierto en 1937, está rodeado por un interesante bosque de piedras que parecen reproducir las siluetas de piadosos frailes (por lo que familiarmente se les denomina "frailones"). Además, destacan el Acueducto (1000 a.C.), singular obra
+                de ingeniería hidráulica; el denominado Santuario, farallón con apariencia de una gigantesca cabeza humana; y Las Cuevas, donde existen grabados o petroglifos.</p>
+            <h3>Datos Generales</h3>
+            <ul>
+                <li>Ubicación: A 20km al suroeste de la ciudad de Cajamarca</li>
+                <li>Clima: Templado</li>
+                <li>Temperatura promedio: Entre 5° y 18°</li>
+                <li>Acceso Via terrestre: Se puede tomar alguna movilidad que se dirija a Chetilla, o se puede contratar alguna agencia de turismo</li>
 
-    </footer>
+            </ul>
+
+        </div> -->
+        <!-- <div>
+            <h2 align="center">Cataratas de Llacanora</h2>
+            <center><img class="img" src="img/llacanora.jpg" alt=""></i>
+            </center>
+            <p>LLACANORA por sus caracteristicas es un tipico pueblo de sierra, su significado es "Tierra de Color". Llacanora cuentas con dos caidas de agua, conocidas como las cataratas de Llacanora, la primera catarata del recorrido tiene el nombre de
+                Catarata Hembra, su caida de agua es de poca altura en comparacion con la de la Catarata Macho.</p>
+            <address>Autor:Redacción Peru.com</address>
+        </div> -->
+
+        <audio> <source src="mus/carnaval.mp3" type="audio/mp3"></audio>
+        <footer class="page-footer font-small cyan special-color-dark ">
+
+            <!-- Footer Elements -->
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-5">
+                        <div class="mb-5 flex-center">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic" href="https://www.facebook.com/juan.santosburgos" target="blank">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic" href="https://twitter.com/Burgos_6" target="blank">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+
+                            <!--Instagram-->
+                            <a class="ins-ic" href="https://www.instagram.com/tillchz/" target="blank">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+            <!-- Footer Elements -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyrigth:
+                <a href=""> Juan Santos Burgos</a>| <a href="mailto: jsantosb@unc.edu.pe"> jsantosb@unc.edu.pe</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+        <!-- JQuery -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js "></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
 
 
 
